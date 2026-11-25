@@ -2,6 +2,12 @@
 01-raw-videos/*
 !01-raw-videos/.gitkeep
 
+# 例外：用户指定要上传的鲸言鲸语原始视频和配音
+!01-raw-videos/03-鲸言鲸语/
+01-raw-videos/03-鲸言鲸语/*
+!01-raw-videos/03-鲸言鲸语/鲸言鲸语_-别再让AI当专家_#vibe知识大赏_#-20261125195302.mp4
+!01-raw-videos/03-鲸言鲸语/鲸言鲸语_-别再让AI当专家_#vibe知识大赏_#-20261125195302.mp3
+
 # WorkBuddy 项目内部数据，不是交付内容
 .workbuddy/
 
