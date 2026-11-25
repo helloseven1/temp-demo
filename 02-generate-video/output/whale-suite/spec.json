@@ -1,0 +1,92 @@
+{
+  "id": "whale-suite",
+  "title": "鲸语视觉套件 · 全流程样例",
+  "brand": "鲸言鲸语 · 视觉套件",
+  "style": "whale",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "+8%",
+  "mascot": { "t": "鲸鲸!!", "face": "happy" },
+  "chapters": [
+    { "badge": "引", "name": "一个误区", "fromSub": 0, "toSub": 2 },
+    { "badge": "做", "name": "一套动作", "fromSub": 2, "toSub": 6 },
+    { "badge": "果", "name": "拿到结果", "fromSub": 6, "toSub": 9 }
+  ],
+  "lines": [
+    {
+      "text": "你还在把AI当成搜索框，一句话问完就关掉？",
+      "intent": "hook",
+      "mascot": { "t": "鲸？", "face": "think" },
+      "items": [
+        { "kind": "wHook", "badge": "常见误区", "t": "把AI当搜索框", "d": "问一句，关掉，再从头来一遍", "icon": "magnifier", "accent": "red", "motion": "shock" }
+      ]
+    },
+    {
+      "text": "真正会用的人，都把它当一个[[搭子]]：能开工、能返工、能较真。",
+      "intent": "quote",
+      "mascot": { "t": "原来如此", "face": "wow" },
+      "items": [
+        { "kind": "wQuote", "t": "AI 不是答案，是搭子", "by": "会用的人", "motion": "typeIn" }
+      ]
+    },
+    {
+      "text": "第一步[[定向]]，第二步深挖，第三步借力，三步就够。",
+      "intent": "enumerate",
+      "mascot": { "t": "记下了", "face": "happy" },
+      "items": [
+        { "kind": "trioSticky", "t1": "定向", "t2": "深挖", "t3": "借力", "badge": "三步", "motion": "pop" }
+      ]
+    },
+    {
+      "text": "别再说帮我写一下，换个说法，结果[[天差地别]]。",
+      "intent": "contrast",
+      "layout": "center",
+      "mascot": { "t": "对比一下", "face": "think" },
+      "items": [
+        { "kind": "wVersus", "beforeTitle": "模糊指令", "before": "帮我写一下", "afterTitle": "说清任务", "after": "写给谁、要什么、多长", "motion": "flip" }
+      ]
+    },
+    {
+      "text": "目标要给足，条件也别含糊，两头都要[[稳]]。",
+      "intent": "proof",
+      "mascot": { "t": "要平衡", "face": "think" },
+      "items": [
+        { "kind": "wBalance", "left": { "t": "目标更清楚" }, "right": { "t": "条件也明确" }, "accent": "amber", "motion": "tilt" }
+      ]
+    },
+    {
+      "text": "我这周就靠这[[四件事]]：定题、列纲、追问、改写。",
+      "intent": "checklist",
+      "mascot": { "t": "照着做", "face": "happy" },
+      "items": [
+        { "kind": "wTable", "head": ["顺序", "动作", "要点"], "rows": [["1", "定题", "一句话说清目的"], ["2", "列纲", "先出框架再填"], ["3", "追问", "哪里不全接着问"], ["4", "改写", "换说法反复比"]], "accent": "blue", "motion": "unfold" }
+      ]
+    },
+    {
+      "text": "同样是三步，说清任务的人，返工次数能少[[一大半]]。",
+      "intent": "proof",
+      "mascot": { "t": "有数据", "face": "wow" },
+      "layout": "row",
+      "items": [
+        { "kind": "wMetric", "num": "3", "unit": "步", "t": "固定动作", "accent": "blue", "motion": "wobble" },
+        { "kind": "wMetric", "num": "60", "unit": "%", "t": "返工更少", "accent": "jade", "motion": "wobble" },
+        { "kind": "wMetric", "num": "1", "unit": "条", "t": "说清任务", "accent": "amber", "motion": "wobble" }
+      ]
+    },
+    {
+      "text": "记住这条[[链路]]：定向、深挖、借力，一步都别跳。",
+      "intent": "steps",
+      "mascot": { "t": "记住啦", "face": "happy" },
+      "items": [
+        { "kind": "wFlow", "steps": [{"t": "定向", "d": "说清目的"}, {"t": "深挖", "d": "追问细节"}, {"t": "借力", "d": "让它反复改"}], "accent": "blue", "motion": "unfold" }
+      ]
+    },
+    {
+      "text": "别再装专家，把[[任务说清楚]]，看它到底多做了什么。",
+      "intent": "conclusion",
+      "mascot": { "t": "记住啦", "face": "wow" },
+      "items": [
+        { "kind": "lensBar", "t": "多做了什么？", "before": "回答更长", "after": "任务说清楚", "accent": "blue", "motion": "rise" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "whale-kit",
+  "title": "鲸语风格包样例",
+  "brand": "鲸言鲸语 · 风格包",
+  "style": "whale",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "+8%",
+  "mascot": { "t": "鲸鲸!!", "face": "happy" },
+  "chapters": [
+    { "badge": "引", "name": "旧做法", "fromSub": 0, "toSub": 2 },
+    { "badge": "三", "name": "新做法", "fromSub": 2, "toSub": 5 }
+  ],
+  "lines": [
+    {
+      "text": "你是不是还在对AI说，你是一个[[专家]]？这是两年前的那一套。",
+      "intent": "hook",
+      "mascot": { "t": "鲸？", "face": "think" },
+      "items": [
+        { "kind": "illustration", "name": "calendar", "t": "2年前", "accent": "red", "motion": "pop" }
+      ]
+    },
+    {
+      "text": "别再装专家，按[[三步]]走。",
+      "intent": "enumerate",
+      "mascot": { "t": "鲸鲸!!", "face": "happy" },
+      "items": [
+        { "kind": "trioSticky", "t1": "定向", "t2": "深挖", "t3": "借力", "badge": "三步", "motion": "pop" }
+      ]
+    },
+    {
+      "text": "第一步，先说清[[最终目的]]，再查遗漏，把时间预算也交代清楚。",
+      "intent": "steps",
+      "mascot": { "t": "记下了", "face": "happy" },
+      "items": [
+        { "kind": "illustration", "name": "target", "t": "目的", "accent": "blue", "motion": "pop" },
+        { "kind": "illustration", "name": "magnifier", "t": "查遗漏", "accent": "amber", "motion": "drop" },
+        { "kind": "illustration", "name": "clock", "t": "给约束", "accent": "jade", "motion": "flip" }
+      ]
+    },
+    {
+      "text": "目标交得更完整，不等于条件可以更[[模糊]]。",
+      "intent": "proof",
+      "mascot": { "t": "鲸？", "face": "think" },
+      "items": [
+        { "kind": "balance", "left": { "t": "目标更完整" }, "right": { "t": "条件更模糊" }, "accent": "amber", "motion": "tilt" }
+      ]
+    },
+    {
+      "text": "别再装专家，把[[任务说清楚]]，看它到底多做了什么。",
+      "intent": "conclusion",
+      "mascot": { "t": "记住啦", "face": "wow" },
+      "items": [
+        { "kind": "lensBar", "t": "多做了什么？", "before": "回答更长", "after": "任务说清楚", "accent": "blue", "motion": "rise" }
+      ]
+    }
+  ]
+}

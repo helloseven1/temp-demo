@@ -1,0 +1,56 @@
+{
+  "id": "ai-workflow",
+  "title": "AI 工作流三段论",
+  "brand": "库系统 · 第二集",
+  "style": "ink",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+6%",
+  "chapters": [
+    { "badge": "1", "name": "认知", "fromSub": 0, "toSub": 2 },
+    { "badge": "2", "name": "方法", "fromSub": 2, "toSub": 6 }
+  ],
+  "lines": [
+    {
+      "text": "多数人用AI，只用了它[[一成]]的能力。",
+      "intent": "hook",
+      "items": [ { "kind": "kpi", "t": "10%", "d": "大多数人的 AI 使用率", "accent": "amber" } ]
+    },
+    {
+      "text": "差距不在工具，在[[工作流]]。",
+      "intent": "claim",
+      "items": [ { "kind": "big", "t": "工作流", "d": "才是分水岭", "accent": "blue" } ]
+    },
+    {
+      "text": "一个完整工作流有[[三个]]环节。",
+      "intent": "enumerate",
+      "items": [
+        { "kind": "card", "t": "输入", "d": "结构化上下文", "icon": "doc", "accent": "blue" },
+        { "kind": "card", "t": "处理", "d": "拆解与推理", "icon": "brain", "accent": "violet" },
+        { "kind": "card", "t": "输出", "d": "校验再交付", "icon": "check", "accent": "jade" }
+      ]
+    },
+    {
+      "text": "第一步，给足[[上下文]]，而不是一句话丢过去。",
+      "intent": "proof",
+      "items": [ { "kind": "table", "accent": "blue", "items": [
+        { "t": "角色与背景", "d": "谁在用、为什么", "icon": "expert" },
+        { "t": "目标与标准", "d": "做到什么算好", "icon": "target" },
+        { "t": "约束与材料", "d": "边界和输入", "icon": "box" }
+      ] } ]
+    },
+    {
+      "text": "第二步，让它[[自己检查]]一遍，别拿第一版就走。",
+      "intent": "steps",
+      "items": [
+        { "kind": "flow", "t": "先出草稿", "icon": "pen", "accent": "blue" },
+        { "kind": "flow", "t": "自查反证", "icon": "search", "accent": "rose" },
+        { "kind": "flow", "t": "修订交付", "icon": "check", "accent": "jade" }
+      ]
+    },
+    {
+      "text": "最后一句：[[你负责判断，AI 负责产出]]。",
+      "intent": "conclusion",
+      "items": [ { "kind": "quote", "t": "你负责判断\nAI 负责产出" } ]
+    }
+  ]
+}

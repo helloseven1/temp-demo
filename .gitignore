@@ -1,0 +1,10 @@
+# 原始素材目录：只保留目录结构，不上传里面的 2.5G 文件
+01-raw-videos/*
+!01-raw-videos/.gitkeep
+
+# WorkBuddy 项目内部数据，不是交付内容
+.workbuddy/
+
+# Python 缓存
+__pycache__/
+*.py[cod]

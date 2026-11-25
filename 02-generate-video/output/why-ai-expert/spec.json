@@ -1,0 +1,64 @@
+{
+  "id": "why-ai-expert",
+  "title": "别再让 AI 当专家",
+  "brand": "鲸言鲸语 · 库样例",
+  "style": "paper",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "+8%",
+  "chapters": [
+    { "badge": "引", "name": "旧做法", "fromSub": 0, "toSub": 2 },
+    { "badge": "一", "name": "新做法", "fromSub": 2, "toSub": 7 }
+  ],
+  "lines": [
+    {
+      "text": "你是不是还在对AI说，你是一个某某领域的[[专家]]？",
+      "intent": "quote",
+      "items": [ { "kind": "quote", "t": "你是一个某某领域的专家" } ]
+    },
+    {
+      "text": "专家身份只是换了一套[[专业词汇]]，做事方法却没变。",
+      "intent": "contrast",
+      "items": [ { "kind": "compare", "left": { "t": "换专业词汇", "d": "表面像专家" }, "right": { "t": "方法没变", "d": "结果照旧" } } ]
+    },
+    {
+      "text": "正确的是按[[三步]]走。",
+      "intent": "enumerate",
+      "items": [
+        { "kind": "sticky", "motion": "pop", "t": "定向", "accent": "amber" },
+        { "kind": "sticky", "motion": "drop", "t": "深挖", "accent": "blue" },
+        { "kind": "sticky", "motion": "flip", "t": "借力", "accent": "rose" }
+      ]
+    },
+    {
+      "text": "第一步，[[定向]]。先说清最终目的，再问要求有没有遗漏。",
+      "intent": "steps",
+      "items": [
+        { "kind": "flow", "t": "说清目的", "icon": "target", "accent": "blue" },
+        { "kind": "flow", "t": "问遗漏", "icon": "search", "accent": "amber" },
+        { "kind": "flow", "t": "交代约束", "icon": "lock", "accent": "jade" }
+      ]
+    },
+    {
+      "text": "把[[时间]]、[[预算]]和[[不能改的条件]]都交代清楚。",
+      "intent": "enumerate",
+      "items": [
+        { "kind": "chip", "t": "时间", "icon": "clock", "accent": "blue" },
+        { "kind": "chip", "t": "预算", "icon": "coins", "accent": "amber" },
+        { "kind": "chip", "t": "不能改", "icon": "lock", "accent": "rose" }
+      ]
+    },
+    {
+      "text": "目标更完整是好事，条件更[[模糊]]是坑。",
+      "intent": "checklist",
+      "items": [
+        { "kind": "tick", "t": "目标交得更完整", "ok": true },
+        { "kind": "tick", "t": "条件写得更模糊", "ok": false }
+      ]
+    },
+    {
+      "text": "所以别再装专家，把[[任务说清楚]]就行。",
+      "intent": "conclusion",
+      "items": [ { "kind": "big", "t": "说清楚", "d": "比装专家有用得多", "accent": "blue" } ]
+    }
+  ]
+}

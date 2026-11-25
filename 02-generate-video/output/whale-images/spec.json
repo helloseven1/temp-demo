@@ -1,0 +1,57 @@
+{
+  "id": "whale-images",
+  "title": "鲸语图片素材 · 图标组件样例",
+  "brand": "鲸言鲸语 · 图片素材",
+  "style": "whale",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "+8%",
+  "mascot": { "t": "鲸鲸!!", "face": "happy" },
+  "chapters": [
+    { "badge": "识", "name": "认识图标", "fromSub": 0, "toSub": 3 },
+    { "badge": "用", "name": "实际用法", "fromSub": 3, "toSub": 5 }
+  ],
+  "lines": [
+    {
+      "text": "今天教你三件事，全靠这几个[[小图标]]记。",
+      "intent": "hook",
+      "mascot": { "t": "看图!", "face": "wow" },
+      "items": [
+        { "kind": "wHook", "badge": "新能力", "t": "图片也能当组件", "d": "生成的小图标，直接拖进稿子用", "icon": "target", "accent": "blue", "motion": "shock" }
+      ]
+    },
+    {
+      "text": "第一件事，先看[[日历]]，把时间定下来。",
+      "intent": "enumerate",
+      "mascot": { "t": "看日历", "face": "think" },
+      "items": [
+        { "kind": "img", "src": "calendar", "t": "定时间", "w": 300, "h": 300, "accent": "blue", "motion": "pop" },
+        { "kind": "img", "src": "clock", "t": "卡节点", "w": 300, "h": 300, "accent": "amber", "motion": "pop" }
+      ]
+    },
+    {
+      "text": "第二件事，拿[[放大镜]]找问题，对准[[靶心]]。",
+      "intent": "enumerate",
+      "mascot": { "t": "找问题", "face": "think" },
+      "items": [
+        { "kind": "img", "src": "magnifier", "t": "找问题", "w": 300, "h": 300, "accent": "blue", "motion": "rise" },
+        { "kind": "img", "src": "target", "t": "定目标", "w": 300, "h": 300, "accent": "red", "motion": "rise" }
+      ]
+    },
+    {
+      "text": "最后一步，上[[齿轮]]，让流程自己转起来。",
+      "intent": "claim",
+      "mascot": { "t": "转起来", "face": "happy" },
+      "items": [
+        { "kind": "img", "src": "gear", "t": "自动运转", "w": 360, "h": 360, "accent": "amber", "motion": "wobble", "bare": true }
+      ]
+    },
+    {
+      "text": "图标是图，卡片还是代码画的，[[混着用]]效果最好。",
+      "intent": "conclusion",
+      "mascot": { "t": "记住啦", "face": "wow" },
+      "items": [
+        { "kind": "wQuote", "t": "图片管质感，代码管换色", "by": "鲸语素材规范", "motion": "typeIn" }
+      ]
+    }
+  ]
+}
