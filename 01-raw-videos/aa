@@ -1,0 +1,17 @@
+1. **lucide-react（首选，最多人用）**
+[https://lucide.dev/](https://lucide.dev/)
+线条统一、MIT 免费商用，直接当 React 组件导入，在 Remotion 里可以给它加`spring`、路径描边动画、缩放入场，完美适配矢量渲染，不会糊Lucide
+
+```
+import { Play } from "lucide-react";
+<Play size={40} color="#fff" />
+```
+
+2. **Remocn 自带动画图标（专门给 Remotion 做的）**https://remocn.dev/docs/icons/gallery
+基于 Lucide 改写，**内置了预设动画**，hover 预览动效，直接复制组件，不用自己写 keyframes，就是你之前看的 Remocn 网站里那批图标remocn.dev
+3. **Phosphor Icons**[https://phosphoricons.com/](https://phosphoricons.com/)
+粗细变体多，适合科技、数据类 MG 视频，导出 SVG 或者用`phosphor-react`包
+4. **@remotion/shapes（官方原生形状）**https://www.remotion.dev/docs/shapes
+不是图标库，是代码生成基础图形：星星、箭头、爱心、闪光，纯 path 生成，适合简单几何小标识，可控性最强Remotion
+5. 其他备选：Tabler Icons、IconPark、Feather
+直接单张下载 SVG，把 svg 源码贴进 Remotion 的`<svg>`标签里，再给 path 加动画
