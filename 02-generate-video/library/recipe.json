@@ -1,0 +1,12 @@
+{
+  "hook":       { "layout": "center",   "motion": "shock",      "stagger": 0, "title": "误区" },
+  "claim":      { "layout": "center",   "motion": "pop",        "stagger": 0, "title": "观点" },
+  "contrast":   { "layout": "split",    "motion": "flip",       "stagger": 5, "title": "对比" },
+  "enumerate":  { "layout": "grid",     "motion": "pop",        "stagger": 3, "title": "并列" },
+  "steps":      { "layout": "timeline", "motion": "slideRight", "stagger": 5, "title": "步骤" },
+  "quote":      { "layout": "center",   "motion": "typeIn",     "stagger": 0, "title": "原话" },
+  "checklist":  { "layout": "column",   "motion": "rise",       "stagger": 4, "title": "清单" },
+  "proof":      { "layout": "row",      "motion": "rise",       "stagger": 4, "title": "论据" },
+  "conclusion": { "layout": "center",   "motion": "stamp",      "stagger": 0, "title": "结论" },
+  "transition": { "layout": "center",   "motion": "fade",       "stagger": 0, "title": "" }
+}
